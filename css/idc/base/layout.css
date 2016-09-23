@@ -1,0 +1,137 @@
+/**
+ * Master layout
+ */
+
+.wrapper {
+	background: #ececec url(../../../img/patterns/body-pattern.png) repeat left top;
+}
+
+/**
+ * Sections
+ */
+section {
+	height: 590px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.container {
+	padding-top: 84px;
+}
+
+/**
+ * Grid
+ */
+.grid {
+	border-top: 10px solid #c80f0a;
+}
+
+.row {
+	padding: 3em;
+}
+
+	.row > div {
+		float: left;
+		width: 50%;
+	}
+
+	.row .left-col {
+		padding: 3em;
+	}
+
+	.row .right-col {
+		float: right;
+		padding: 3em;
+	}
+
+	.row .col-4 {
+		padding: 2em 1.5em;
+		width: 25%;
+	}
+
+/**
+ * footer
+ */
+.sprite,
+[class*="-sprite"] {
+	background-image: url(../../../img/sprites/social-sprite.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	*text-indent: -9999px;
+	display: inline-block;
+	border: 0;
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+	background-color: transparent;
+}
+.sprite:before,
+[class*="-sprite"]:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.facebook-sprite {
+	background-position: 0 0;
+}
+
+.vimeo-sprite {
+	background-position: -78px 0;
+}
+
+.twitter-sprite {
+	background-position: -40px 0;
+}
+
+/**
+ * Tablets
+ * max-width: 1024px
+ */
+@media all and (max-width: 64em) {
+	.row .col-4 {
+		padding: 2em 1em;
+	}
+}
+
+/**
+ * Mobile Devices
+ * max-width: 768px
+ */
+@media all and (max-width: 48em) {
+	.container {
+		padding-top: 0;
+	}
+	
+	.row {
+		padding: 2em;
+	}
+
+	.row > div {
+		float: left;
+		width: 100%;
+	}
+
+	.row .left-col,
+	.row .right-col {
+		padding: .5em;
+	}
+
+	.grid {
+		border-width: 5px;
+	}
+
+	.row .col-4 {
+		min-height: 120px;
+		padding: 1em;
+	}
+
+	.row .col-4:nth-child(2n+1) {
+		width: 36%;
+	}
+
+	.row .col-4:nth-child(2n+2) {
+		width: 64%;
+	}
+}

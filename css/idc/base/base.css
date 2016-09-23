@@ -1,0 +1,113 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    background-color: #ececec;
+    font-size: 14px;
+    line-height: 1.8571428571em;
+}
+
+html,
+body {
+    height:100%;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    /* just in case, to force correct aspect ratio */
+    height: auto !important;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #010101;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+a:hover {
+    text-shadow: 1px 1px rgba(0,0,0, 0.4);
+}
+
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/**
+ * Tablets
+ * max-width: 1024px
+ */
+@media all and (max-width: 64em) {
+    body {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+}
+
+/**
+ * Mobile Devices
+ * max-width: 768px
+ */
+@media all and (max-width: 48em) {
+    body {
+        font-size: 10px;
+        line-height: 1.5em;
+    }
+}

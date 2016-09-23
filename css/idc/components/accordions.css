@@ -1,0 +1,213 @@
+.accordion,
+.accordion .item {
+	height: 100%;
+}
+
+.accordion .item {
+	float: left;
+	width: 25%;
+}
+
+
+.item {
+	position: relative;
+	overflow: hidden;
+
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.item .header {
+	background-color: red, transparent;
+	background-position: 50% 50%;
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
+	border-left: 2px solid #ddd;
+	border-left-color: rgb(220,220,220,0.5);
+
+	color: rgba(255,255,255,0.6);
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	top: 0;
+	position: absolute;
+	z-index: 2;
+}
+
+	.item .header:hover {
+		color: rgba(255,255,255,1);
+	}
+
+	.item:first-child .header {
+		border: 0;
+	}
+
+	.header h3 {
+		display: block;
+		font-size: 3.25em; /*52/16*/
+		line-height: 1em;
+		opacity: 1;
+		position: absolute;
+		text-align: center;
+		top: 48%;
+		width: 100%;
+		z-index: 0;
+
+		-webkit-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.header small {
+		display: block;
+		font-size: 0.5em;
+		line-height: 1em;
+		margin: 0;
+		text-align: center;
+	}
+
+.body {
+	left: 26.5%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+.body img {
+	/*min-height: 100%;*/
+}
+
+	.body .slider-mask > li {
+		overflow: hidden;
+	}
+
+/**
+ * Open - Active
+ */
+.open .item {
+	width: 2%;
+}
+
+.open .header h3 {
+	opacity: 0;
+}
+
+.open .active {
+	overflow: auto;
+	width: 94%;
+}
+
+.open .active h3 {
+	opacity: 1;
+}
+
+.open .active:nth-child(1) .header {
+	width: 26.5%;
+}
+.open .active:nth-child(2) .header {
+	width: 24.5%;
+}
+.open .active:nth-child(3) .header {
+	width: 22.5%;
+}
+.open .active:nth-child(4) .header {
+	width: 20.5%;
+}
+
+.open .active:nth-child(1) .body {
+	left: 26.5%;
+	width: 73.5%;
+}
+.open .active:nth-child(2) .body {
+	left: 24.5%;
+	width: 75.5%;
+}
+.open .active:nth-child(3) .body {
+	left: 22.5%;
+	width: 77.5%;
+}
+.open .active:nth-child(4) .body {
+	left: 20.5%;
+	width: 79.5%;
+}
+
+
+/**
+ * Mobile Devices
+ * max-width: 768px
+ */
+@media all and (max-width: 48em) {
+
+	.accordion .item {
+		font-size: 0;
+		height: 25%;
+		width: 100%;
+	}
+
+		.accordion .item .header {
+			border-left-width: 0;
+			border-top: 2px solid #ddd;
+			border-top-color: rgb(220,220,220,0.5);
+			font-size: initial;
+			height: 100%;
+		}
+
+		.header h3 {
+			font-size: 2.1em;
+			top: 35%;
+		}
+
+		.body {
+			font-size: 10px;
+			left: 0;
+			top: 25%;
+			visibility: hidden;
+		}
+
+	/**
+	 * Open - Active
+	 */
+	.open .item {
+		height: 2%;
+	}
+
+	.open .active {
+		height: 94%;
+	}
+
+	.accordion.open .active .header {
+		height: 25%;
+		width: 100%;
+	}
+
+	.accordion.open .active .body {
+		height: 75%;
+		left: 0;
+		visibility: visible;
+		width: 100%;
+	}
+
+	.open .active:nth-child(1) .header,
+	.open .active:nth-child(2) .header,
+	.open .active:nth-child(3) .header,
+	.open .active:nth-child(4) .header {
+		width: 100%;
+	}
+
+	.open .active:nth-child(1) .body,
+	.open .active:nth-child(2) .body,
+	.open .active:nth-child(3) .body,
+	.open .active:nth-child(4) .body {
+		left: 0;
+		width: 100%;
+	}
+}

@@ -1,0 +1,109 @@
+/*! slider v1.0.0 2014-03-02 */
+ul,
+li {
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.slider {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  height: 100%;
+  width: 100%;
+
+  perspective: 1000;
+  -webkit-perspective: 1000;
+}
+ 
+  .slider-viewport {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+    .slider-viewport.dragging {
+      cursor: -webkit-grabbing;
+      cursor: -moz-grabbing;
+    }
+
+  .slider-mask {
+    float: left;
+    font-size: 0;
+    transition: all 0.5s;
+    transform: translate3d(0px,0,0px);
+  }
+
+    .slider-mask li {
+      display: block;
+      float: left;
+      font-size: 13px;
+
+      -webkit-sizing: border-box;
+      -moz-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+  .slider .prev-btn,
+  .slider .next-btn {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 47%;
+    z-index: 1;
+
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+  }
+
+  .slider .next-btn {
+    left: auto;
+    right: 0;
+  }
+
+    .slider .prev-btn:hover,
+    .slider .next-btn:hover {
+      opacity: 1;
+    }
+
+  .slider-pager {
+    bottom: 1em;
+    margin: 1em 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .slider-pager li {
+    border: 0;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+  }
+
+    .slider-pager a {
+      box-shadow: 0 1px rgba(0,0,0,0.5);
+      background-color: #999;
+      border-radius: 100%;
+      display: block;
+      height: 8px;
+      overflow: hidden;
+      padding: 0;
+      text-indent: -999em;
+      text-decoration: none;
+      width: 8px;
+    }
+
+    .slider-pager .active {
+      background-color: #fff;
+      height: 8px;
+      width: 8px;
+    }

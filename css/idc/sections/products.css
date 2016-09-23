@@ -1,0 +1,31 @@
+.mobiliario .header {
+	background-image: url(../../../img/patterns/body-pattern-transparent.png), url(../../../img/products/header-mobiliario.jpg);
+}
+
+.mesas .header {
+	background-image: url(../../../img/patterns/body-pattern-transparent.png), url(../../../img/products/header-mesas.jpg);
+}
+
+.estructura .header {
+	background-image: url(../../../img/patterns/body-pattern-transparent.png), url(../../../img/products/header-estructura.jpg);
+}
+
+.arquitectura .header {
+	background-image: url(../../../img/patterns/body-pattern-transparent.png), url(../../../img/products/header-arquitectura.jpg);
+}
+
+	.header .title-first {
+		margin-top: 0;
+	}
+
+	.mesas .header small {
+		font-size: 0.55em;
+	}
+
+	.estructura .header small {
+		font-size: 0.59em;
+	}
+
+	.arquitectura .header small {
+		font-size: 0.635em;
+	}

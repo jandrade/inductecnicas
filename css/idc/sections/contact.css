@@ -1,0 +1,50 @@
+.contact {
+	color: #010101;
+}
+
+	.contact h2,
+	.contact h4 {
+		color: #c90f0b;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.contact h2 {
+		font-family: 'bebasneue', sans-serif;
+		font-size: 2.142857em; /* 30/14 */
+		line-height: 1.1em;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.contact h4 {
+		font-family: 'sansation', sans-serif;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.contact hr {
+		border-color: #010101;
+		margin-left: -0.5em;
+		margin-right: -0.5em;
+	}
+
+/**
+ * Mobile Devices
+ * max-width: 768px
+ */
+@media all and (max-width: 48em) {
+	.contact h2 {
+		font-size: 1.1em; /* 11 */
+	}
+
+	.contact hr {
+		margin: 0.5em 0;
+	}
+
+	.contact h4 {
+		display: none;
+	}
+
+	.contact p {
+		font-size: 0.9em;
+	}
+}

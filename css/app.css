@@ -1,0 +1,75 @@
+/**
+ * @fileoverview Master Stylesheet
+ * @project idc (Indutecnicas de Colombia)
+ * @version 1.0.0
+ * @author  Juan David Andrade <juandavidandrade@gmail.com>
+ * @date 2014-02-10
+ */
+ 
+/*
+--------------------------------------------------------------------
+[Table of contents]
+
+1. Base
+  - Base
+  - Fonts
+  - Layout
+2. Components
+  - Accordions
+  - Buttons
+  - Header
+  - Modals
+  - Sliders
+3. Sections
+  - About
+  - Intro
+  - Services
+  - Products
+  - Contact
+4. Utils
+
+--------------------------------------------------------------------
+[Color codes]
+
+Primary Text Color: #c90f0b
+Header: #1e1f21
+Secondary Text Color: #010101
+Alternative Text Color: #fff
+
+--------------------------------------------------------------------
+[Typography]
+
+Body copy:          1.625em/1em Sansation, sans-serif;
+Headers:            2.25em/1em Sansation, sans-serif;
+
+-------------------------------------------------------------------*/
+
+/* ==========================================================================
+   1. Base
+   ========================================================================== */
+@import 'idc/base/base.css';
+@import 'idc/base/fonts.css';
+@import 'idc/base/layout.css';
+
+/* ==========================================================================
+   2. Components
+   ========================================================================== */
+@import 'idc/components/accordions.css';
+@import 'idc/components/buttons.css';
+@import 'idc/components/modals.css';
+@import 'idc/components/sliders.css';
+
+/* ==========================================================================
+   3. Sections
+   ========================================================================== */
+@import 'idc/sections/about.css';
+@import 'idc/sections/header.css';
+@import 'idc/sections/intro.css';
+@import 'idc/sections/services.css';
+@import 'idc/sections/products.css';
+@import 'idc/sections/contact.css';
+
+/* ==========================================================================
+   4. Utils
+   ========================================================================== */
+@import 'idc/utils.css';
